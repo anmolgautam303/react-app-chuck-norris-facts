@@ -1,0 +1,12 @@
+.factsContainer {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.buttons-container{
+  margin: 2rem;
+}
+
+.factsContainer h3 {
+  font-style: italic;
+}
