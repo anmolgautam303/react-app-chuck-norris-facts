@@ -6,12 +6,13 @@ import {
   FETCH_ALL_CATEGORY,
   FETCH_FACT_BY_CATEGORY
 } from '../constants/Facts_constants';
-import { getRandomFact, 
+import { 
+  getRandomFact, 
   getAllCategory, 
   getFactByCategory 
 } from './FactsSaga'
 
-const api = Api.create()
+const api = Api.create();
 
 function* Saga() {
   yield takeLatest(FETCH_RANDOM_FACT, getRandomFact, api);

@@ -12,6 +12,7 @@ class Header extends Component {
     justifyContent: "space-evenly",
     listStyle: "none"
   };
+  
   render() {
     return (
       <div style={this.header}>

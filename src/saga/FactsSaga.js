@@ -31,8 +31,6 @@ export function* getAllCategory(api) {
 }
 
 export function* getFactByCategory(api, action) {
-    console.log('check actions here:', action);
-
     try {
         const response = yield call(api.fetchFactByCategory, action.payload)
         if(response.ok) {

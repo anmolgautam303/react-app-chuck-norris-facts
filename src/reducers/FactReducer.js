@@ -1,5 +1,6 @@
 import ls from 'local-storage';
-import { SET_RANDOM_FACT, 
+import { 
+  SET_RANDOM_FACT, 
   SET_ALL_CATEGORY, 
   SET_FACT_BY_CATEGORY,
   UPDATE_FAVOURITE_JOKES

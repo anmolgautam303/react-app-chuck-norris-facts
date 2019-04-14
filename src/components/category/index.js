@@ -20,23 +20,23 @@ class Facts extends Component {
     }
   }
 
-  handleChange = event => {
-    this.setState({selectedCategory: event.target.value});
+  handleChange = (val) => {
+    this.setState({ selectedCategory: val })
   };
 
-  render() {
+  render() {    
     return (
       <div className="categoryContainer">
         <div className="select-container">
 
           <DropdownButton
             variant="light"
-            onSelect={(val) => {this.setState({ selectedCategory: val }) }}
+            onSelect={this.handleChange}
             id="dropdown-basic-button" title={this.state.selectedCategory}
           >
             {
               this.props.categories.map((item, i) => {
-                return <Dropdown.Item key={i} eventKey={item}>{item}</Dropdown.Item>
+                return <Dropdown.Item key={i} eventKey={item} className={item}>{item}</Dropdown.Item>
               })
             }
           </DropdownButton>
