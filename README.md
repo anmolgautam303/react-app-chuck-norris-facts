@@ -1,15 +1,17 @@
-# React Router Dom v4.2.2 boiler plate
+# react-app-chuck-norris-facts (React+Redux+Saga+apisauce)
 
-## Active link styles are also added
-easy to use for your next project
+## install dependencies
+yarn install
 
-
-## Header is also included
-and splitted in separate files
-
+## run the project
+yarn start
 
 
-## npm install
- to install dependencies
+## run tests
+yarn test
+
+## check test coverage
+yarn test -- --coverage
+
 
 
